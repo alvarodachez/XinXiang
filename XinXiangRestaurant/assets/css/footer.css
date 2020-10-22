@@ -1,0 +1,15 @@
+.rrss,
+.pagos,
+.nosotros {
+    width: 33.33%;
+    height: 30vw;
+    float: left;
+    font-size: smaller;
+}
+
+.copyright {
+    height: 5vw;
+    text-align: center;
+    border-style: solid;
+    border-color: brown;
+}
