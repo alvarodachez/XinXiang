@@ -1,0 +1,40 @@
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: small;
+}
+
+.usContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.copyrightContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapLocal {
+    height: 70%;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
