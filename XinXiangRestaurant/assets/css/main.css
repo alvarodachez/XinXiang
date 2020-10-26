@@ -47,6 +47,8 @@
 }
 
 header {
+    display: grid;
+    grid-template-columns: 20vw 40vw 20vw;
     overflow: hidden;
     position: fixed;
     top: 0;
