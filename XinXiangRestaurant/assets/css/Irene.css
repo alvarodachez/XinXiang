@@ -1,0 +1,89 @@
+/* 
+    ESTILOS PARA LA BARRA DE NAVEGACIÓN
+*/
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F36B1E;
+}
+
+
+/* Se centran los elementos de la barra de navegación*/
+
+.breadcrumbs {
+    align-items: center;
+}
+
+
+/* Se quitan las viñetas de la lista */
+
+ul.breadcrumbs {
+    list-style: none;
+}
+
+
+/* Se da formato a los elementos de la lista*/
+
+ul.breadcrumbs li {
+    display: inline;
+    font-size: 3vw;
+}
+
+
+/* Se añade el elemento que separa las distintas páginas */
+
+ul.breadcrumbs li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+
+/* Se da formato a los enlaces */
+
+ul.breadcrumbs li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*
+    ESTILOS PARA EL MENÚ DESPLEGABLE
+*/
+
+.menuButton {
+    height: 10vw;
+    position: relative;
+    display: inline-block;
+}
+
+.showMenu {
+    height: 10vw;
+    border: solid green 1px;
+}
+
+.menuContent {
+    display: none;
+    position: absolute;
+    background-color: #F36B1E;
+    overflow: auto;
+    box-shadow: 3px 3px 10px 0px rgba(218, 87, 11, 1);
+    z-index: 1;
+}
+
+.menuContent a {
+    padding: 3vw 3vw;
+    text-decoration: none;
+    display: block;
+}
+
+.menuContent a:hover {
+    background-color: #f9b086;
+}
+
+.show {
+    display: block;
+}
