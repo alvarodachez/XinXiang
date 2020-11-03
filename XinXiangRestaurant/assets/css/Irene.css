@@ -54,36 +54,42 @@ ul.breadcrumbs li a {
     ESTILOS PARA EL MENÚ DESPLEGABLE
 */
 
+.showMenu {
+    background-color: #F36B1E;
+    padding: 4vw;
+    border: none;
+}
+
 .menuButton {
-    height: 10vw;
     position: relative;
     display: inline-block;
 }
 
-.showMenu {
-    height: 10vw;
-    border: solid green 1px;
-}
-
 .menuContent {
+    margin-top: 2vw;
     display: none;
     position: absolute;
-    background-color: #F36B1E;
-    overflow: auto;
-    box-shadow: 3px 3px 10px 0px rgba(218, 87, 11, 1);
+    background-color: #fbd0b6;
+    width: 35vw;
+    box-shadow: 5px 5px 5px 0px rgba(254, 239, 231, 1);
     z-index: 1;
 }
 
 .menuContent a {
-    padding: 3vw 3vw;
+    color: black;
+    padding: 3vw 4vw;
     text-decoration: none;
     display: block;
 }
 
 .menuContent a:hover {
-    background-color: #f9b086;
+    background-color: #f9b286;
 }
 
-.show {
+.menuButton:hover .menuContent {
     display: block;
+}
+
+.menuButton:hover .showMenu {
+    background-color: #db5a0a;
 }
