@@ -54,20 +54,39 @@ ul.breadcrumbs li a {
     ESTILOS PARA EL MENÚ DESPLEGABLE
 */
 
+
+/* Se da estilo a los divs que van a formar el icono de hamburguesa */
+
+.burgerMenu {
+    width: 6vw;
+    height: 1vw;
+    background-color: black;
+    margin: 1vw 4vw;
+}
+
+
+/* Estilo del div que va a contener el icono del menu de hamburguesa */
+
 .showMenu {
     background-color: #F36B1E;
-    padding: 4vw;
     border: none;
 }
+
+
+/* Se establece la posición del icono y de los elementos del menu */
 
 .menuButton {
     position: relative;
     display: inline-block;
 }
 
+
+/* Estilo para el div que contiene los elementos del menu */
+
 .menuContent {
     margin-top: 2vw;
     display: none;
+    /* Hacemos que no sea visible*/
     position: absolute;
     background-color: #fbd0b6;
     width: 35vw;
@@ -75,21 +94,34 @@ ul.breadcrumbs li a {
     z-index: 1;
 }
 
+
+/* Estilo para los elementos del menu */
+
 .menuContent a {
     color: black;
-    padding: 3vw 4vw;
+    padding-left: 4vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
     text-decoration: none;
     display: block;
+    border: solid 1px #f9b286;
 }
+
+
+/* Color del elemento del menú seleccionado */
 
 .menuContent a:hover {
     background-color: #f9b286;
 }
 
+
+/* Cuando tocamos el icono del menú de hamburguesa mostramos sus elementos */
+
 .menuButton:hover .menuContent {
     display: block;
 }
 
-.menuButton:hover .showMenu {
-    background-color: #db5a0a;
-}
+
+/*
+    ESTILOS PARA EL SLIDE
+*/
