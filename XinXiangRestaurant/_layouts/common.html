@@ -5,6 +5,7 @@
     <link href="../assets/css/alvaro/header.css" rel="stylesheet">
     <link href="../assets/css/alvaro/contacto.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e4be36513b.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/yi/footer.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
@@ -15,10 +16,13 @@
             {% include header.html %}
         </div>
         <div class="contenido-contacto">
-            {%include contacto.html %}
+           {{content}}
+        </div>
+        <div class="footer-contacto">
+            {% include footer.html %}
         </div>
     </div>
-    
+   
     
     
 </body>

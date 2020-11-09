@@ -1,6 +1,6 @@
 .contenedor-total{
     display: grid;
-    grid-template-rows: 20vw 60vw;
+    grid-template-rows: 20vw 100vw 30vw;
 
 }
 
@@ -12,6 +12,8 @@
 .formulario-contacto input{
     padding: 1vw;
     margin-top: 1vw;
+    width: 60vw;
+    margin-left: 20vw;
 }
 .formulario-contacto textarea{
     padding: 1vw;
