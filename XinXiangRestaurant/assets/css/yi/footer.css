@@ -4,6 +4,11 @@ footer {
     font-size: small;
 }
 
+.foot {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .usContainer {
     display: flex;
     flex-flow: row wrap;
