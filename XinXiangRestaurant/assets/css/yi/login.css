@@ -25,7 +25,8 @@ div {
     flex-direction: column;
 }
 
-.sign, .log {
+.sign,
+.log {
     display: flex;
     flex-direction: column;
     justify-content: center;
