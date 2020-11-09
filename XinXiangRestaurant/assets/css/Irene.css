@@ -1,0 +1,127 @@
+/* 
+    ESTILOS PARA LA BARRA DE NAVEGACIÓN
+*/
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F36B1E;
+}
+
+
+/* Se centran los elementos de la barra de navegación*/
+
+.breadcrumbs {
+    align-items: center;
+}
+
+
+/* Se quitan las viñetas de la lista */
+
+ul.breadcrumbs {
+    list-style: none;
+}
+
+
+/* Se da formato a los elementos de la lista*/
+
+ul.breadcrumbs li {
+    display: inline;
+    font-size: 3vw;
+}
+
+
+/* Se añade el elemento que separa las distintas páginas */
+
+ul.breadcrumbs li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+
+/* Se da formato a los enlaces */
+
+ul.breadcrumbs li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*
+    ESTILOS PARA EL MENÚ DESPLEGABLE
+*/
+
+
+/* Se da estilo a los divs que van a formar el icono de hamburguesa */
+
+.burgerMenu {
+    width: 6vw;
+    height: 1vw;
+    background-color: black;
+    margin: 1vw 4vw;
+}
+
+
+/* Estilo del div que va a contener el icono del menu de hamburguesa */
+
+.showMenu {
+    background-color: #F36B1E;
+    border: none;
+}
+
+
+/* Se establece la posición del icono y de los elementos del menu */
+
+.menuButton {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Estilo para el div que contiene los elementos del menu */
+
+.menuContent {
+    margin-top: 2vw;
+    display: none;
+    /* Hacemos que no sea visible*/
+    position: absolute;
+    background-color: #fbd0b6;
+    width: 35vw;
+    box-shadow: 5px 5px 5px 0px rgba(254, 239, 231, 1);
+    z-index: 1;
+}
+
+
+/* Estilo para los elementos del menu */
+
+.menuContent a {
+    color: black;
+    padding-left: 4vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    text-decoration: none;
+    display: block;
+    border: solid 1px #f9b286;
+}
+
+
+/* Color del elemento del menú seleccionado */
+
+.menuContent a:hover {
+    background-color: #f9b286;
+}
+
+
+/* Cuando tocamos el icono del menú de hamburguesa mostramos sus elementos */
+
+.menuButton:hover .menuContent {
+    display: block;
+}
+
+
+/*
+    ESTILOS PARA EL SLIDE
+*/
