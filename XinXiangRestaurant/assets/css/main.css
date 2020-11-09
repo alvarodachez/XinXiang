@@ -46,12 +46,7 @@
     width: 100%;
 }
 
-header {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    height: 20vw;
-}
+
 
 nav {
     overflow: hidden;
