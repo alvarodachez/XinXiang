@@ -1,6 +1,6 @@
 .contenedor-total{
     display: grid;
-    grid-template-rows: 20vw 100vw 30vw;
+    grid-template-rows: 20vw 10vw 100vw 30vw;
 
 }
 
