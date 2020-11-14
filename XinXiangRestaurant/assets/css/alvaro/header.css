@@ -1,11 +1,13 @@
 header {
    display: grid;
-   grid-template-columns: 20vw 50vw 20vw;
+   grid-template-columns: 33vw 45vw 18vw;
    overflow: hidden;
    position: fixed;
    top: 0;
+   
    height: 20vw;
    align-items: center;
+   background-color: #F36B1E;
 }
 .logo img{
 height: 14vw;
