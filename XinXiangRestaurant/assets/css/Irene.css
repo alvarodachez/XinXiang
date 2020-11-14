@@ -231,3 +231,27 @@ ul.breadcrumbs li a {
         opacity: 1
     }
 }
+
+
+/*
+    ESTILOS PARA LA PÁGINA PRINCIPAL
+*/
+
+.categoria {
+    margin: 0 5vw;
+}
+
+.categoria h3 {
+    color: #F36B1E;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5vw;
+}
+
+img {
+    width: 35vw;
+    height: 35vw;
+}
