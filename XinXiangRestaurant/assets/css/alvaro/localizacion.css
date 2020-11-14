@@ -1,0 +1,4 @@
+.container-localizacion{
+    display: grid;
+    grid-template-rows: 16vw 80vw 60vw;
+}
