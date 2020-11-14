@@ -2,3 +2,9 @@
     display: grid;
     grid-template-rows: 16vw 80vw 60vw;
 }
+.titulo-localizacion-container{
+    text-align: center;
+}
+.info-localizacion-container{
+    text-align: center;
+}
