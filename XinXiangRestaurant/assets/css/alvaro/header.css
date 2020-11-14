@@ -10,7 +10,10 @@ header {
 .logo img{
 height: 14vw;
 }
-
+.logSign i{
+   margin-left: 10vw;
+   
+}
 .search input{
    margin-left: 1vw;
    height: 3vw;

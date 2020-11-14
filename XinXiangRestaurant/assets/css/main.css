@@ -46,7 +46,11 @@
     width: 100%;
 }
 
-
+.contenedorHeaderMenu{
+    display: grid;
+    grid-template-rows: 16vw 8vw;
+    
+}
 
 nav {
     overflow: hidden;

@@ -4,6 +4,7 @@
     <link href="../assets/css/main.css" rel="stylesheet">
     <link href="../assets/css/alvaro/header.css" rel="stylesheet">
     <link href="../assets/css/alvaro/contacto.css" rel="stylesheet">
+    <link href="../assets/css/alvaro/localizacion.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e4be36513b.js" crossorigin="anonymous"></script>
     <link href="../assets/css/Irene.css" rel="stylesheet">
     <link href="../assets/css/yi/footer.css" rel="stylesheet">
@@ -12,23 +13,15 @@
     <title>Contacto</title>
 </head>
 <body>
-    <div class="contenedor-total">
-        <div class="header-contacto">
-            {% include header.html %}
-            
-        </div>
-        <div class="menu-contacto">
+    
+        <div class="contenedorHeaderMenu">
+            <div>
+                {% include header.html %}
+            </div>
             {% include menu.html %}
         </div>
-        <div class="contenido-contacto">
-           {{content}}
-        </div>
-        <div class="footer-contacto">
+            {{content}}
+        
             {% include footer.html %}
-        </div>
-    </div>
-   
-    
-    
 </body>
 </html>
