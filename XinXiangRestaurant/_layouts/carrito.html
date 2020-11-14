@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./carrito.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="contenedorPagoCarro">
+      <!-- div contenesor de los elementos de pagos -->
+      <div class="pagosContainer">
+        <div class="pagos">
+          <!-- titulo -->
+          <div>
+            <h3>Método de Pago:</h3>
+            <hr />
+          </div>
+          <div><input type="text" placeholder="Número de tarjeta" /></div>
+          <div><input type="text" placeholder="Titular de tarjeta" /></div>
+          <div>
+            <b>Fecha Caducidad:</b><br /><input type="month" placeholder="MM" />
+          </div>
+          <div><input type="number" placeholder="CVV" /></div>
+        </div>
+      </div>
+      <div class="platos">
+        <div>
+          <h3>Tus Platos:</h3>
+          <hr />
+        </div>
+        <div class="plato">
+          <br />
+          <hr />
+        </div>
+        <div>
+          <b>Total : <input type="number" placeholder="00,00" />€</b>
+        </div>
+      </div>
+    </div>
+    <div class="boton">
+      <input class="finalizar" type="button" value="Finalizar Pedido" />
+    </div>
+  </body>
+</html>

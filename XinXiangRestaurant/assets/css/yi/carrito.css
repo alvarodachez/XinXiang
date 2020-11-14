@@ -1,0 +1,26 @@
+.contenedorPagoCarro {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.platos,
+.pagosContainer {
+  display: flex;
+  padding: 5%;
+  width: 100%;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.platos {
+  direction: column;
+}
+
+input {
+  margin: 2%;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+}
