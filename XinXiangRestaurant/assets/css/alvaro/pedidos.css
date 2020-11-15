@@ -1,0 +1,143 @@
+.titulo-pedido h2{
+    text-align: center;
+}
+.pedidos-container{
+    display: grid;
+    grid-template-rows:70vw 80vw;
+    height: 220vw;
+}
+.comida-container {
+    border-color: #F36B1E;
+    border-width: 0.5vw;
+    border-style: solid;
+}
+
+.modificar-comida-container{
+    display: grid;
+    grid-template-columns: 50vw 40vw;
+    
+}
+.modificar-comida-container h5{
+    margin-left: 8vw;
+    
+    
+}
+.modificar-comida-container i{
+    padding: 4vw;
+    margin-left: 5vw;
+    
+}
+.precio-comida-container{
+    margin-left: 8vw;
+}
+.info-pedido-container{
+    margin-top: 10vw;
+    display: grid;
+    grid-template-rows: 58vw 15vw 42vw 15vw;
+    text-align: center;
+    height: 100vw;
+}
+.envio-container{
+    border-color: #F36B1E;
+    border-width: 0.5vw;
+    border-style: solid;
+    height: 55vw;
+}
+.recogida-container{
+    
+    border-color: #F36B1E;
+    border-width: 0.5vw;
+    border-style: solid;
+    height: 40vw;
+}
+.boton-envio button{
+height: 10vw;
+margin-top: 2vw;
+
+}
+.boton-recogida button{
+    height: 10vw;
+    margin-top: 2vw;
+    
+}
+
+@media(min-width:650px){
+
+    .titulo-pedido h2{
+        margin-top: 2vw;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .pedidos-container{
+        display: grid;
+        grid-template-columns:51vw 50vw;
+        height: 43vw;
+    }
+    .comida-container {
+        border-color: #F36B1E;
+        border-width: 0.5vw;
+        border-style: solid;
+        width: 50vw;
+        height: 30vw;
+    }
+    .comida-container li{
+        font-size: 1.6vw;
+    }
+    
+    .modificar-comida-container{
+        display: grid;
+        grid-template-columns: 10vw 30vw;
+        
+    }
+    .modificar-comida-container h5{
+        margin-left: 2vw;
+        font-size: 1.6vw;
+        
+    }
+    .modificar-comida-container i{
+        padding: 3vw;
+        margin-left: 7vw;
+        
+    }
+    .precio-comida-container{
+        margin-left: 2vw;
+        font-size: 1.6vw;
+    }
+    .info-pedido-container{
+        display: grid;
+        grid-template-rows: 16vw 6vw 12vw 4vw;
+        justify-content: center;
+        text-align: center;
+        height: 40vw;
+        margin-top: 0vw;
+    }
+    .envio-container{
+        border-color: #F36B1E;
+        border-width: 0.5vw;
+        border-style: solid;
+        height: 15vw;
+        width: 40vw;
+        font-size: 1.2vw;
+        margin: 0;
+    }
+    .recogida-container{
+        border-color: #F36B1E;
+        border-width: 0.5vw;
+        border-style: solid;
+        height: 11vw;
+        width: 40vw;
+        font-size: 1.2vw;
+    }
+    .boton-envio button{
+    height: 3vw;
+    width: 10vw;
+    margin-bottom: 1vw;
+    }
+    .boton-recogida button{
+        height: 3vw;
+        width: 10vw;
+        
+    }
+    
+}
