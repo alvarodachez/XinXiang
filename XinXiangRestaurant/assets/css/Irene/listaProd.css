@@ -1,0 +1,57 @@
+/* Estilos para los divs de las categorías de productos*/
+.categoria {
+    margin: 0 5vw;
+}
+
+/* Estilos para el nombre de las categorías */
+.categoria h3 {
+    color: #f36b1e;
+}
+
+/* Mostramos los productos en dos columnas */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5vw;
+}
+
+/* Tamaño de las imagenes */
+.products img {
+    width: 35vw;
+    height: 35vw;
+}
+
+/* Quitamos el subrayado de los enlaces */
+.products a {
+    text-decoration: none;
+}
+
+/* Cuando seguimos un enlace no cambia el color del texto*/
+.products a:visited {
+    color: black;
+}
+
+@media (min-width: 650px) {
+    /* Mostramos los productos en dos columnas */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(4, 18vw);
+        grid-gap: 5vw;
+    }
+
+    /* Tamaño de las imagenes */
+    .products img {
+        width: 19vw;
+        height: 19vw;
+    }
+
+    /* Estilos para el nombre de las categorías */
+    .categoria h3 {
+        font-size: 3.5vw;
+    }
+
+    /* Estilos de los nombres de los platos */
+    .products p {
+        font-size: 2vw;
+    }
+}

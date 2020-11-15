@@ -1,0 +1,81 @@
+/* Se da estilo a los divs que van a formar el icono de hamburguesa */
+.burgerMenu {
+    width: 6vw;
+    height: 0.7vw;
+    background-color: black;
+    margin: 1vw 4vw;
+}
+
+/* Estilo del div que va a contener el icono del menu de hamburguesa */
+.showMenu {
+    background-color: #f36b1e;
+    border: none;
+    padding-top: 1vw;
+    width: 8vw;
+}
+
+/* Se establece la posición del icono y de los elementos del menu */
+.menuButton {
+    height: 8vw;
+    display: inline-block;
+    background-color: #f36b1e;
+    position: fixed;
+    top: 18vw;
+    z-index: 20;
+}
+
+/* Estilo para el div que contiene los elementos del menu */
+.menuContent {
+    display: none; /* Hacemos que no sea visible*/
+    position: absolute;
+    background-color: #fbd0b6;
+    width: 35vw;
+    box-shadow: 5px 5px 5px 0px rgba(254, 239, 231, 1);
+    z-index: 1;
+}
+
+/* Estilo para los elementos del menu */
+.menuContent a {
+    color: black;
+    padding-left: 4vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    text-decoration: none;
+    display: block;
+    border: solid 1px #f9b286;
+}
+
+/* Color del elemento del menú seleccionado */
+.menuContent a:hover {
+    background-color: #f9b286;
+}
+
+/* Cuando tocamos el icono del menú de hamburguesa mostramos sus elementos */
+.menuButton:hover .menuContent {
+    display: block;
+}
+
+@media (min-width: 650px) {
+    /* Se establece la posición del icono y de los elementos del menu */
+    .menuButton {
+        height: 4.5vw;
+        top: 7vw;
+    }
+
+    /* Se da estilo a los divs que van a formar el icono de hamburguesa */
+    .burgerMenu {
+        width: 2vw;
+        height: 0.3vw;
+        margin: 0.5vw 3vw;
+    }
+    /* Estilo para el div que contiene los elementos del menu */
+    .menuContent {
+        width: 20vw;
+        margin-top: 0.5vw;
+    }
+
+    /* Estilo para los elementos del menu */
+    .menuContent a {
+        padding: 1vw;
+    }
+}

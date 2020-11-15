@@ -1,0 +1,144 @@
+/* Margenes de la página */
+#product-container {
+    margin: 0 3vw;
+}
+
+/* Estilo para el nombre del producto */
+#product-container h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 8vw;
+    color: #f36b1e;
+    margin: 4vw;
+}
+
+/* Centramos las imagenes */
+.imagen {
+    display: flex;
+    justify-content: center;
+}
+
+/* Tamaños de las imagenes */
+.imagen img {
+    width: 50vw;
+    height: 50vw;
+}
+
+/* Mostramos ingredientes junto a los alérgenos */
+.ingredients {
+    display: flex;
+    justify-content: space-around;
+    margin: 4vw;
+    margin-bottom: 0;
+}
+
+/* Mostramos el titulo de cada lista en negrita */
+.ingredients p {
+    font-weight: bold;
+}
+
+/* Cambiamos el tipo de viñetas */
+.ingredients ul {
+    list-style-type: circle;
+}
+
+/* Mostramos los puntos de los elementos a la misma altura que el titulo */
+.ingredients li {
+    margin-left: -5vw;
+}
+
+/* Mostramos el precio al lado del botón de enviar */
+.resume {
+    display: flex;
+    justify-content: space-around;
+    margin: 3vw;
+}
+
+/* Formato del precio */
+.price {
+    display: flex;
+}
+
+/* Hacemos más visible el precio */
+.resume p {
+    font-size: 5vw;
+}
+
+/* Le damos estilo al botón */
+.resume button {
+    padding: 1.5vw 2vw;
+    margin: 3vw;
+    font-size: 4vw;
+    background-color: #f9b286;
+    border: solid 3px #f36b1e;
+    border-radius: 12px;
+}
+
+/* Oscurecer el color del boton al presionarlo */
+.resume button:hover {
+    background-color: #f36b1e;
+    border: solid 3px #c24e0a;
+}
+
+@media (min-width: 650px) {
+    /* Margenes de la página */
+    #product-container {
+        margin: 0 2vw;
+    }
+
+    /* Estilo para el nombre del producto */
+    #product-container h3 {
+        font-size: 4vw;
+        margin: 4vw;
+        width: 100%;
+    }
+
+    /* Estructura de la página */
+    #product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    /* Tamaños de las imagenes */
+    .imagen img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    /* Estilos del div que contiene los ingredientes y alérgenos */
+    .ingredients {
+        width: 30%;
+        font-size: 2vw;
+        justify-content: space-between;
+        margin-top: 1vw;
+    }
+
+    /* Mostramos los puntos de los elementos a la misma altura que el titulo */
+    .ingredients li {
+        margin-left: -1vw;
+    }
+
+    /* Mostramos el precio al lado del botón de enviar */
+    .resume {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: 3vw;
+    }
+
+    /* Hacemos más visible el precio */
+    .resume p {
+        font-size: 3.5vw;
+    }
+
+    /* Le damos estilo al botón */
+    .resume button {
+        padding: 0.5vw 1vw;
+        margin: 3vw;
+        font-size: 3vw;
+        background-color: #f9b286;
+        border: solid 3px #f36b1e;
+        border-radius: 12px;
+    }
+}

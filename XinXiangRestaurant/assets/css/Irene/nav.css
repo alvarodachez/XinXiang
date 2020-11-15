@@ -1,0 +1,28 @@
+/* Se centran los elementos de la barra de navegación*/
+.breadcrumbs {
+    align-items: center;
+}
+
+/* Se quitan las viñetas de la lista */
+ul.breadcrumbs {
+    list-style: none;
+}
+
+/* Se da formato a los elementos de la lista*/
+ul.breadcrumbs li {
+    display: inline;
+    font-size: 3vw;
+}
+
+/* Se añade el elemento que separa las distintas páginas */
+ul.breadcrumbs li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+/* Se da formato a los enlaces */
+ul.breadcrumbs li a {
+    color: black;
+    text-decoration: none;
+}
