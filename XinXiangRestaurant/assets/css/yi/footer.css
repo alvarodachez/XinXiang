@@ -2,6 +2,7 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     font-size: small;
+    background-color: #F36B1E;
 }
 
 .foot {
