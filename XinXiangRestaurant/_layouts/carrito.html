@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./carrito.css" />
-    <title>Document</title>
-  </head>
-
-  <body>
+--- 
+layout: common
+---
     <div class="contenedorPagoCarro">
       <!-- div contenesor de los elementos de pagos -->
       <div class="pagosContainer">
@@ -30,17 +23,15 @@
           <h3>Tus Platos:</h3>
           <hr />
         </div>
-        <div class="plato">
+        <div class="plato" id="plato">
           <br />
           <hr />
         </div>
         <div>
-          <b>Total : <input type="number" placeholder="00,00" />€</b>
+          <b>Total : <input id="precio" type="number" placeholder="00,00" />€</b>
         </div>
       </div>
     </div>
     <div class="boton">
-      <input class="finalizar" type="button" value="Finalizar Pedido" />
+      <button type="submit">Finalizar Pedido</button>
     </div>
-  </body>
-</html>

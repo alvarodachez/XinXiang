@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+div {
+    margin: 1%;
+    padding: 0;
+}
+
+.reserveContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+input {
+    padding: 2%;
+    border-radius: 20px;
+    border-color: rgb(255, 0, 0);
+    color: rgb(170, 0, 0);
+}
+
+input:focus {
+    padding: 2.5%;
+    border-radius: 20px;
+    background-color: rgb(255, 154, 154);
+    color: black;
+    font-size: medium;
+}
+
+button {
+    padding: 10%;
+    margin: 5%;
+    background-color: rgb(255, 91, 91);
+    border-radius: 20px;
+    color: rgb(255, 238, 0);
+}
