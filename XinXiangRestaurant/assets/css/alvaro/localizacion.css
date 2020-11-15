@@ -1,0 +1,36 @@
+.container-localizacion{
+    display: grid;
+    grid-template-rows: 80vw 60vw;
+}
+.titulo-localizacion-container{
+    text-align: center;
+}
+.info-localizacion-container{
+    text-align: center;
+}
+@media(min-width:650px){
+    .titulo-localizacion-container{
+        text-align: center;
+        margin-top: 4vw;
+        font-size: 1.6vw;
+    }
+    .container-localizacion{
+        margin-top: 5vw;
+        display: grid;
+        grid-template-columns: 45vw 45vw;
+        height: 30vw;
+    }
+    .info-localizacion-container{
+        text-align: center;
+        font-size: 1.5vw;
+        margin-left: 1vw;
+    }
+    .map-container{
+        margin-top: 1.5vw;
+        margin-left: 2vw;
+    }
+    .map-container iframe{
+        width: 40vw;
+        height: 20vw;
+    }
+}
