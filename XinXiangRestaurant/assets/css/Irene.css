@@ -1,62 +1,40 @@
 /* 
     ESTILOS PARA LA BARRA DE NAVEGACIÓN
 */
-
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #F36B1E;
-}
-
-
 /* Se centran los elementos de la barra de navegación*/
-
 .breadcrumbs {
     align-items: center;
 }
 
-
 /* Se quitan las viñetas de la lista */
-
 ul.breadcrumbs {
     list-style: none;
 }
 
-
 /* Se da formato a los elementos de la lista*/
-
 ul.breadcrumbs li {
     display: inline;
     font-size: 3vw;
 }
 
-
 /* Se añade el elemento que separa las distintas páginas */
-
 ul.breadcrumbs li+li:before {
     padding: 8px;
     color: black;
     content: ">";
 }
 
-
 /* Se da formato a los enlaces */
-
 ul.breadcrumbs li a {
     color: black;
     text-decoration: none;
 }
 
-
 /*
     ESTILOS PARA EL MENÚ DESPLEGABLE
 */
 
-
 /* Se da estilo a los divs que van a formar el icono de hamburguesa */
-
 .burgerMenu {
     width: 6vw;
     height: 0.7vw;
@@ -64,18 +42,14 @@ ul.breadcrumbs li a {
     margin: 1vw 4vw;
 }
 
-
 /* Estilo del div que va a contener el icono del menu de hamburguesa */
-
 .showMenu {
     background-color: #F36B1E;
     border: none;
     padding-top: 1vw;
 }
 
-
 /* Se establece la posición del icono y de los elementos del menu */
-
 .menuButton {
     height: 8vw;
     display: inline-block;
@@ -85,9 +59,7 @@ ul.breadcrumbs li a {
     z-index: 20;
 }
 
-
 /* Estilo para el div que contiene los elementos del menu */
-
 .menuContent {
     display: none;  /* Hacemos que no sea visible*/
     position: absolute;
@@ -97,9 +69,7 @@ ul.breadcrumbs li a {
     z-index: 1;
 }
 
-
 /* Estilo para los elementos del menu */
-
 .menuContent a {
     color: black;
     padding-left: 4vw;
@@ -110,28 +80,21 @@ ul.breadcrumbs li a {
     border: solid 1px #f9b286;
 }
 
-
 /* Color del elemento del menú seleccionado */
-
 .menuContent a:hover {
     background-color: #f9b286;
 }
 
-
 /* Cuando tocamos el icono del menú de hamburguesa mostramos sus elementos */
-
 .menuButton:hover .menuContent {
     display: block;
 }
-
 
 /*
     ESTILOS PARA EL SLIDE
 */
 
-
 /* Estilos para el contenedor de los slides */
-
 .slideshow {
     box-sizing: border-box;
     width: 100%;
@@ -140,16 +103,12 @@ ul.breadcrumbs li a {
     margin: auto;
 }
 
-
 /* Ocultamos las imagenes por defecto */
-
 .slide {
     display: none;
 }
 
-
 /* Estilo para los botones prev y next */
-
 .prev,
 .next {
     cursor: pointer;
@@ -164,32 +123,24 @@ ul.breadcrumbs li a {
     user-select: none;
 }
 
-
 /* Ponemos el botón next a la izquierda */
-
 .next {
     right: 0;
 }
 
-
 /* Estilos para las imagenes */
-
 .slide img {
     width: 100%;
     height: 35vw;
 }
 
-
 /* Centramos el div que contiene todos los puntos */
-
 .dots {
     display: flex;
     justify-content: center;
 }
 
-
 /* Estilos para los circulos de posición */
-
 .dot {
     cursor: pointer;
     height: 2vw;
@@ -201,14 +152,13 @@ ul.breadcrumbs li a {
     transition: background-color 0.6s ease;
 }
 
+/* Cambio de color del círculo activo */
 .active,
 .dot:hover {
     background-color: #F36B1E;
 }
 
-
 /* Animación del cambio de imagen */
-
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -236,24 +186,109 @@ ul.breadcrumbs li a {
 
 
 /*
-    ESTILOS PARA LA PÁGINA PRINCIPAL
+    ESTILOS PARA LAS LISTAS DE PRODUCTOS
 */
 
+/* Estilos para los divs de las categorías de productos*/
 .categoria {
     margin: 0 5vw;
 }
 
+/* Estilos para el nombre de las categorías */
 .categoria h3 {
     color: #F36B1E;
 }
 
+/* Mostramos los productos en dos columnas */
 .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5vw;
 }
 
-img {
+/* Tamaño de las imagenes */
+.products img {
     width: 35vw;
     height: 35vw;
+}
+
+/*
+    ESTILOS PARA LAS PÁGINAS DE LOS PRODUCTOS
+*/
+
+/* Margenes de la página */
+#product-container {
+    margin: 0 3vw;
+}
+
+/* Estilo para el nombre del producto */
+#product-container h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 8vw;
+    color: #F36B1E;
+    margin: 4vw;
+}
+
+/* Centramos las imagenes */
+.imagen {
+    display: flex;
+    justify-content: center;
+}
+
+/* Tamaños de las imagenes */
+.imagen img {
+    width: 50vw;
+    height: 50vw;
+}
+
+/* Mostramos ingredientes junto a los alérgenos */
+.ingredients {
+    display: flex;
+    justify-content: space-around;
+    margin: 4vw;
+    margin-bottom: 0;
+}
+
+/* Mostramos el titulo de cada lista en negrita */
+.ingredients p {
+    font-weight: bold;
+}
+
+/* Cambiamos el tipo de viñetas */
+.ingredients ul {
+    list-style-type: circle;
+}
+
+/* Mostramos los puntos de los elementos a la misma altura que el titulo */
+.ingredients li {
+    margin-left: -5vw;
+}
+
+/* Mostramos el precio al lado del botón de enviar */
+.resume {
+    display: flex;
+    justify-content: space-around;
+    margin: 3vw;
+}
+
+/* Hacemos más visible el precio */
+.resume p {
+    font-size: 5vw;
+}
+
+/* Le damos estilo al botón */
+.resume button {
+    padding: 1.5vw 2vw;
+    margin: 3vw;
+    font-size: 4vw;
+    background-color: #f9b286;
+    border: solid 3px #F36B1E;
+    border-radius: 12px;
+}
+
+/* Oscurecer el color del boton al presionarlo */
+.resume button:hover {
+    background-color: #F36B1E;
+    border: solid 3px #c24e0a;
 }

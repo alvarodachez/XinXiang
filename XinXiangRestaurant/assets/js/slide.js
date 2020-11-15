@@ -1,10 +1,3 @@
-/* 
-    SLIDESHOW
-*/
-/*
-    FUNCIONALIDADES PARA LOS SlIDES
-*/
-
 // Función para mostrar las imagenes de forma automática
 function showSlideAuto() {
     let slides = document.getElementsByClassName("slide");
