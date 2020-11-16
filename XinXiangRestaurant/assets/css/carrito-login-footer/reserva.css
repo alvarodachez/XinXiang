@@ -1,10 +1,4 @@
-body {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-div {
+.reserveContainer div {
     margin: 1%;
     padding: 0;
 }
@@ -15,14 +9,14 @@ div {
     align-items: center;
 }
 
-input {
+.reserveContainer input {
     padding: 2%;
     border-radius: 20px;
     border-color: rgb(255, 0, 0);
     color: rgb(170, 0, 0);
 }
 
-input:focus {
+.reserveContainer input:focus {
     padding: 2.5%;
     border-radius: 20px;
     background-color: rgb(255, 154, 154);
@@ -30,7 +24,7 @@ input:focus {
     font-size: medium;
 }
 
-button {
+.reserveContainer button {
     padding: 10%;
     margin: 5%;
     background-color: rgb(255, 91, 91);
