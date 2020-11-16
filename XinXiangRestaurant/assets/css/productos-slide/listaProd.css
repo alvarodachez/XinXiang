@@ -21,9 +21,10 @@
     height: 35vw;
 }
 
-/* Quitamos el subrayado de los enlaces */
+/* Quitamos el subrayado de los enlaces y ponemos el texto negro */
 .products a {
     text-decoration: none;
+    color: black;
 }
 
 /* Cuando seguimos un enlace no cambia el color del texto*/
