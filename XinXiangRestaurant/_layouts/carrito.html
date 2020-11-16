@@ -1,0 +1,38 @@
+--- 
+layout: common
+---
+    <div class="contenedorPagoCarro">
+      <!-- div contenesor de los elementos de pagos -->
+      <div class="pagosContainer">
+        <div class="pagos">
+          <!-- titulo -->
+          <div>
+            <h3>Método de Pago:</h3>
+            <hr />
+          </div>
+          <div><input type="text" placeholder="Número de tarjeta" /></div>
+          <div><input type="text" placeholder="Titular de tarjeta" /></div>
+          <div>
+            <b>Fecha Caducidad:</b><br /><input type="month" placeholder="MM" />
+          </div>
+          <div><input type="number" placeholder="CVV" /></div>
+        </div>
+      </div>
+      <div class="platos">
+        <div>
+          <h3>Tus Platos:</h3>
+          <hr />
+        </div>
+        <div class="plato" id="plato">
+          <br />
+          <hr />
+          <img src="" alt="">
+        </div>
+        <div>
+          <b>Total : <input id="precio" type="number" placeholder="00,00" />€</b>
+        </div>
+      </div>
+    </div>
+    <div class="boton">
+      <button id="finalizar" type="submit">Finalizar Pedido</button>
+    </div>

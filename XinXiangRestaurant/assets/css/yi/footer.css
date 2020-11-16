@@ -2,11 +2,15 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     font-size: small;
+    background-color: #F36B1E;
 }
 
 .foot {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .usContainer {
@@ -42,4 +46,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media(min-width:650px) {
+    footer {
+        font-size: large;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
