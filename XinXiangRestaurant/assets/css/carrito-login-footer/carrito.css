@@ -1,22 +1,23 @@
 .contenedorPagoCarro {
-  display: flex;
-  flex-wrap: wrap-reverse;
+    display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 .platos,
 .pagosContainer {
-  display: flex;
-  padding: 5%;
-  width: 100%;
-  flex-flow: column nowrap;
-  justify-content: center;
+    display: flex;
+    padding: 5%;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
 .platos {
-  direction: column;
+    direction: column;
 }
 
-input {
+
+/* input {
   margin: 2%;
   padding: 1%;
   border-radius: 20px;
@@ -38,9 +39,9 @@ button {
   background-color: rgb(255, 91, 91);
   border-radius: 20px;
   color: rgb(255, 238, 0);
-}
+} */
 
 .boton {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }

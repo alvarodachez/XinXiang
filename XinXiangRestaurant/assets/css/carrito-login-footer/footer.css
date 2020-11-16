@@ -52,7 +52,6 @@ footer {
     footer {
         font-size: large;
     }
-
     .foot {
         display: flex;
         justify-content: space-evenly;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="../assets/css/main.css" rel="stylesheet">
     <link href="../assets/css/contacto-localizacion-pedidos/header.css" rel="stylesheet">
@@ -12,28 +13,25 @@
     <link href="../assets/css/productos-slide/nav.css" rel="stylesheet">
     <link href="../assets/css/productos-slide/producto.css" rel="stylesheet">
     <link href="../assets/css/productos-slide/slide.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/yi/footer.css">
-   <!--
-       
-    <link rel="stylesheet" href="../assets/css/yi/carrito.css"/>
-    <link rel="stylesheet" href="../assets/css/yi/nos.css"/>
-    <link rel="stylesheet" href="../assets/css/yi/reserva.css">
-   --> 
-    <script src="../assets/js/yi/yi.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/carrito-login-footer/footer.css">
+    <link rel="stylesheet" href="../assets/css/carrito-login-footer/carrito.css" />
+    <link rel="stylesheet" href="../assets/css/carrito-login-footer/nos.css" />
+    <link rel="stylesheet" href="../assets/css/carrito-login-footer/reserva.css">
+    <!-- <script src="../assets/js/yi/yi.js" defer></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 </head>
+
 <body>
-    
-        <div class="contenedorHeaderMenu">
-            <div>
-                {% include header.html %}
-            </div>
-            {% include menu.html %}
+
+    <div class="contenedorHeaderMenu">
+        <div>
+            {% include header.html %}
         </div>
-            {{content}}
-        
-            {% include footer.html %}
+        {% include menu.html %}
+    </div>
+    {{content}} {% include footer.html %}
 </body>
+
 </html>
