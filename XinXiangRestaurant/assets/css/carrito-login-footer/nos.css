@@ -1,6 +1,6 @@
-.container {
+.noscontainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .sobreNosotros,
@@ -14,4 +14,11 @@
 .sobreNosotros p,
 .quienesSomos p {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(min-width:650px) {
+    .noscontainer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }

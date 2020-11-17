@@ -1,47 +1,56 @@
 .contenedorPagoCarro {
-    display: flex;
-    flex-wrap: wrap-reverse;
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
 
 .platos,
 .pagosContainer {
-    display: flex;
-    padding: 5%;
-    width: 100%;
-    flex-flow: column nowrap;
-    justify-content: center;
+  display: flex;
+  padding: 5%;
+  width: 100%;
+  flex-flow: column nowrap;
 }
 
-.platos {
-    direction: column;
+.pagos {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
 }
 
 
-/* input {
-  margin: 2%;
-  padding: 1%;
-  border-radius: 20px;
-  border-color: rgb(255, 0, 0);
-  color: rgb(170, 0, 0);
+.input {
+margin: 2%;
+padding: 1%;
+border-radius: 20px;
+border-color: rgb(255, 0, 0);
+color: rgb(170, 0, 0);
 }
 
-input:focus {
-  padding: 2.5%;
-  border-radius: 20px;
-  background-color: rgb(255, 154, 154);
-  color: black;
-  font-size: medium;
+.input:focus {
+padding: 2.5%;
+border-radius: 20px;
+background-color: rgb(255, 154, 154);
+color: black;
+font-size: medium;
 }
 
-button {
-  padding: 10%;
-  margin: 5%;
-  background-color: rgb(255, 91, 91);
-  border-radius: 20px;
-  color: rgb(255, 238, 0);
-} */
+.boton button {
+padding: 2%;
+margin: 2%;
+background-color: rgb(255, 91, 91);
+border-radius: 20px;
+color: rgb(255, 238, 0);
+font-size: large;
+}
 
 .boton {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media(min-width:650px) {
+  .contenedorPagoCarro {
+      display: flex;
+      flex-flow: row;
+  }
 }
